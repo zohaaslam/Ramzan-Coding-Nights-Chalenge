@@ -37,7 +37,7 @@ def convert_units(value, unit_from, unit_to):
 st.title("UNIT CONVERTER ⭐🔥") # Set the title of the web app
 
 # user input: numerical value to convert
-value = st.number_input("Enter the value:")
+value = st.number_input("Enter the value:" min_value=1.0, step=1.0)
 
 # dropdown to select unit to convert from
 unit_from = st.selectbox("Convert from", ["meters","kilometers","grams","kilograms"])
